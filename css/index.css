@@ -186,14 +186,6 @@ p {
   color: #454A59;
   font-size: 1.5rem;
 }
-img {
-  display: block;
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 5px;
-  padding-bottom: 5px;
-}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -203,6 +195,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#banner {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 .home .intro h2 {
   padding: 15px;
