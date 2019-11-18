@@ -134,7 +134,8 @@ html {
 }
 html,
 body,
-nav {
+nav,
+button {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
 }
@@ -245,6 +246,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: #22283A;
+  color: #F6F7F8;
+  width: 30%;
+  height: 13%;
+  font-size: 2rem;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0 auto;
+  border: none;
+}
+.home .walk .walk-text .btn:hover {
+  background: #F6F7F8;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
