@@ -1,1 +1,26 @@
 // Mixins Here
+.padding-vertical(@pvertical) {
+    padding-top: @pvertical;
+    padding-bottom: @pvertical;
+}
+
+.padding-horizontal(@phorizontal) {
+    padding-right: @phorizontal;
+    padding-left: @phorizontal;
+}
+
+.margin-vertical(@mvertical) {
+    margin-top: @mvertical;
+    margin-bottom: @mvertical;
+}
+
+.margin-horizontal(@mhorizontal) {
+    margin-left: @mhorizontal;
+    margin-right: @mhorizontal;
+}
+
+.flexbox(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
