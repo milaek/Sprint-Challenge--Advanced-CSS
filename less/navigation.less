@@ -10,8 +10,16 @@
     }
     nav {
         .flexbox(space-around, bottom);
-        .margin-horizontal(36%);
+        max-width: 800px;
+        min-width: 500px
+        width: 27%;
+        margin: 0 auto;
         .padding-vertical(10px);
+        @media @phone {
+            max-width: 500px;
+            width: 80%;
+            margin: 0 auto;
+        }
         a {
             text-decoration: none;
             color: @nav-font;

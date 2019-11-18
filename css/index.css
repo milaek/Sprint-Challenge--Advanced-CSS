@@ -177,10 +177,19 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: bottom;
-  margin-left: 36%;
-  margin-right: 36%;
+  max-width: 800px;
+  min-width: 500px
+        width: 27%;
+  margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .header nav {
+    max-width: 500px;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .header nav a {
   text-decoration: none;
