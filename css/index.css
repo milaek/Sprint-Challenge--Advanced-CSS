@@ -1,3 +1,13 @@
+@keyframes btnfade {
+  from {
+    background: #22283A;
+    color: #F6F7F8;
+  }
+  to {
+    background: #F6F7F8;
+    color: #22283A;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -163,8 +173,11 @@ p {
   margin: 0 auto;
 }
 .header {
+  position: fixed;
+  opacity: 0.8;
   background: #F6F6F6;
   border-bottom: 2px solid #F1F1F1;
+  width: 100%;
 }
 .header h1 {
   font-size: 4rem;
@@ -206,13 +219,16 @@ footer {
   justify-content: center;
   align-items: center;
 }
-#banner {
+.pad-for-nav {
+  padding-top: 97px;
+}
+.pad-for-nav #banner {
   display: block;
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  border-radius: 5px;
   margin-bottom: 5px;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -295,6 +311,8 @@ footer {
   border: none;
 }
 .home .walk .walk-text .btn:hover {
+  animation-name: btnfade;
+  animation-duration: 2s;
   background: #F6F7F8;
   color: #22283A;
 }

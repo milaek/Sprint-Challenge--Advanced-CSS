@@ -1,11 +1,14 @@
 // Home Content
-#banner {
-  display: block;
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 5px;
-  margin-bottom: 5px;
+.pad-for-nav {
+  padding-top: 97px;
+  #banner {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
 }
 
 .home {
@@ -88,6 +91,8 @@
       .btn {
         .buttonstyle(13%, 30%);
         &:hover {
+          animation-name: btnfade;
+          animation-duration: 2s;
           background: @porcelain;
           color: @btn-bg-color;
         }
