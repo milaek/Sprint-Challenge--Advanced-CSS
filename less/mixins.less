@@ -1,1 +1,49 @@
 // Mixins Here
+.padding-vertical(@pvertical) {
+    padding-top: @pvertical;
+    padding-bottom: @pvertical;
+}
+
+.padding-horizontal(@phorizontal) {
+    padding-right: @phorizontal;
+    padding-left: @phorizontal;
+}
+
+.margin-vertical(@mvertical) {
+    margin-top: @mvertical;
+    margin-bottom: @mvertical;
+}
+
+.margin-horizontal(@mhorizontal) {
+    margin-left: @mhorizontal;
+    margin-right: @mhorizontal;
+}
+
+.flexbox(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.buttonstyle(@height, @width) {
+    background: @btn-bg-color;
+    color: @porcelain;
+    width: @width;
+    height: @height;
+    font-size: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 auto;
+    border: none;
+}
+
+@keyframes btnfade {
+    from {
+        background: @btn-bg-color;
+        color: @porcelain;
+    }
+    to {
+        background: @porcelain;
+        color: @btn-bg-color;
+    }
+}

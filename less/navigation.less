@@ -1,1 +1,32 @@
 // Navigation code here
+.header {
+    position: fixed;
+    opacity: 0.8;
+    background: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+    width: 100%;
+    h1 {
+        font-size: 4rem;
+        margin: 0 auto;
+        text-align: center;
+        .padding-vertical(10px);
+    }
+    nav {
+        .flexbox(space-around, bottom);
+        max-width: 800px;
+        min-width: 500px;
+        width: 27%;
+        margin: 0 auto;
+        .padding-vertical(10px);
+        @media @phone {
+            max-width: 500px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.5rem;
+        }
+    }
+}
